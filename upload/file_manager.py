@@ -9,8 +9,7 @@ def file_manager(request):
     date = str(datetime.today()).replace(' ', '_')[:-7]
 
     for format_img in TYPES:
-        print('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
-        print(os.getcwd())
+        
         if format_img in request.POST['url']:
 
             os.system(f"wget -O {os.getcwd()}/media/img/{date} {request.POST['url']}")
