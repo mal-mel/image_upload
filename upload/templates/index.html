@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Index</title>
+    {% block title %}
+    	<title>Index</title>
+    {% endblock %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    {% block style %}
+    {% endblock %}
 </head>
 <body>
 
@@ -26,41 +30,42 @@
 
 		</div>
 	</nav>
+	{% block content %}
+		<div class="container" style="margin-top: 15%;">
 
-	<div class="container" style="margin-top: 15%;">
+			<div class="row">
+				<div class="col-md-6">
+					<ul>
+			        {% for image in links %}
+			            {% ifnotequal image.id 0 %}
+			            	<li><a href="/{{ image.img }}">{{ image.title }}</a></li>
+			            {% endifnotequal %}
+			        {% endfor %}
+			        </ul>
+			        {% if is_paginated %}
+			        	<div class="pagination">
+			            	<span class="page-links" style="margin-left: 10%;">
+			                	{% if page_obj.has_previous %}
+			                    	<a href="/?page={{ page_obj.previous_page_number }}">previous</a>
+			                	{% endif %}
+			                	<span class="page-current" style="color: #ea7a02;">
+			                    	Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+			                	</span>
+			                	{% if page_obj.has_next %}
+			                    	<a href="/?page={{ page_obj.next_page_number }}">next</a>
+			                	{% endif %}
+			            	</span>
+			        	</div>
+	    			{% endif %}
+		    	</div>
 
-		<div class="row">
-			<div class="col-md-6">
-				<ul>
-		        {% for value in links %}
-		            {% ifnotequal value.id 0 %}
-		            	<li><a href="/media/{{ value.img }}">{{ value.img }}</a></li>
-		            {% endifnotequal %}
-		        {% endfor %}
-		        </ul>
-		        {% if is_paginated %}
-		        	<div class="pagination">
-		            	<span class="page-links" style="margin-left: 10%;">
-		                	{% if page_obj.has_previous %}
-		                    	<a href="/?page={{ page_obj.previous_page_number }}">previous</a>
-		                	{% endif %}
-		                	<span class="page-current" style="color: #ea7a02;">
-		                    	Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
-		                	</span>
-		                	{% if page_obj.has_next %}
-		                    	<a href="/?page={{ page_obj.next_page_number }}">next</a>
-		                	{% endif %}
-		            	</span>
-		        	</div>
-    			{% endif %}
-	    	</div>
+		    	<div class="col-md-6" style="background-color: ;">
+			        <h3 style="color: #F2792A;">At the moment, our database contains <strong>{{ len_links }}</strong> pictures</h3>
+		    	</div>
+			</div>
 
-	    	<div class="col-md-6" style="background-color: ;">
-		        <h3 style="color: #F2792A;">At the moment, our database contains <strong>{{ len_links }}</strong> pictures</h3>
-	    	</div>
-		</div>
-
-    </div>
+	    </div>
+	{% endblock %}
 
     <footer class="page-footer font-small blue">
 

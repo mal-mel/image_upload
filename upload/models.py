@@ -2,7 +2,6 @@ from django.db import models
 
 
 class Images(models.Model):
-    objects = models.Manager()
     title = models.CharField(max_length=50)
     img = models.ImageField(upload_to='img')
 
