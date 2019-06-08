@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e74b89a1-809b-4430-807f-fa36dd628c84" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/image_upload/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_upload/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/2019-04-04_18:02:02.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/2019-04-04_18:02:28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/2019-04-04_18:02:48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/2019-06-04-19:11:43.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/2019-06-06-18:18:28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/2019-06-07-15:55:06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/doc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/doc_HWc5VJI.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/upload/templates/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/upload/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="e74b89a1-809b-4430-807f-fa36dd628c84" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/image_upload/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="-1230">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -130,7 +118,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="669" />
     <option name="y" value="205" />
     <option name="width" value="1035" />
@@ -256,7 +244,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="669" y="205" width="1035" height="741" extended-state="0" />
+    <frame x="669" y="205" width="1035" height="741" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -366,16 +354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_upload/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -400,10 +378,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/image_upload/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/image_upload/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="-1230">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
