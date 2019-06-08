@@ -1,1 +1,1 @@
-web: gunicorn medical_blog.wsgi
+web: gunicorn image_upload.wsgi
