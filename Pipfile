@@ -13,6 +13,7 @@ httplib2 = "*"
 gunicorn = "*"
 whitenoise = "*"
 django-heroku = "*"
+dj-static = "*"
 
 [requires]
 python_version = "3.6"
